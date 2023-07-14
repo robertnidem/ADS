@@ -2,7 +2,9 @@
  * IGRF.c
  *
  *  Created on: 13 sep 2022
- *      Author: rober
+
+ Code adapted to C language from:
+ "Luigi De Maria (2023). Earth Magnetic Field with IGRF 13th Gen. (https://www.mathworks.com/matlabcentral/fileexchange/88406-earth-magnetic-field-with-igrf-13th-gen), MATLAB Central File Exchange. Retrieved July 14, 2023."
  */
 
 #include<stdio.h>
@@ -103,7 +105,7 @@ VECTOR earthmagfield13(float r_N[3][1], float t, float alpha_G_0, int n)
     }
     float phi=alpha-alpha_G;
     // Gauss Normalization
-    //Función para monitorear la matriz
+    //FunciÃ³n para monitorear la matriz
     float A[14][13];
 
     int i,j;
